@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(26, 199, 141);
+    user-select: none;
+    font-size: 40px;
+    font-family: 'Trebuchet MS';
+    color: aliceblue;
+    text-align: center;
+}
+
+#calculator{
+    background-color: rgba(255, 255, 255, 0.542);
+    margin-inline:auto;
+    margin-block: 1%;
+    padding: 3%;
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px;
+    align-items: center;
+    gap:10px;
+}
+
+input{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: rgb(21, 0, 33);
+    color: white;
+    padding: 4%;
+    text-decoration: dashed;
+    /* caret-color: transparent; */
+    font-size: 60px;
+    font-family: 'Trebuchet MS';
+    text-align: right;
+    box-shadow: 6px 4px rgb(79, 79, 79);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button{
+    padding: 10%;
+    height: 90px;
+    background-color: rgb(0, 150, 145);
+    /* background-color: rgb(66, 0, 220); */
+    color: white;
+    border: 1px solid white;
+    border-radius: 9px;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS';
+    box-shadow: 6px 4px rgb(79, 79, 79);
+    transition: 200ms ease-in-out;
+}
+
+button:hover{
+    transform: translateY(-3px);
+    
+}
+
+button:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#reset{
+    background-color: rgb(204, 0, 0);
+}
+
+#reset:active{
+    background-color: rgb(255, 51, 0);
+}
+
+#equals{
+    background-color: rgb(68, 0, 193);
+}
+
+#equals:active{
+    background-color: rgb(4, 19, 45);
+}
+
+#operator{
+    background-color: rgb(0, 152, 182);
+}
+
+#operator:active{
+    background-color: rgb(0, 195, 255);
+}
